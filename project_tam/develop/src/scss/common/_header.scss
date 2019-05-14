@@ -1,7 +1,56 @@
 //
 // header
 //------------------------------------------------------------------------
+@charset "utf-8";
 
-// header {
-//   border-bottom: 1px solid $c--black;
-// }
+header {
+  .main_header {
+    display: flex;
+    .top {
+      h1 {
+        font-size: 0;
+        a {
+          display: block;
+        }
+      }
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        display: flex;
+        li {
+          a {
+            font-size: 16px;
+            font-family: $font-web;
+            font-style: normal;
+            color: #000;
+            span {
+              display: inline-block;
+              transform: translateY(0);
+              opacity: 1;
+              transition: all 0.3s ease;
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                top: 7px;
+                left: -20px;
+                width: 10px;
+                height: 10px;
+                border-top: 1px solid #000;
+                border-right: 1px solid #000;
+                transform: rotate(45deg);
+              }
+
+            }
+            &:hover{
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
