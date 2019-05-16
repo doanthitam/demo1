@@ -2,3 +2,227 @@
 // PAGE Top
 //------------------------------------------------------------------------
 @charset "utf-8";
+.mv {
+  padding: 32px 0 25px 0;
+  position: relative;
+  &_txt {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 49px;
+    h2 {
+      line-height: 124px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 34px;
+      font-family: $font-web;
+      letter-spacing: 4px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background: url('../../images/hand_pc.png');
+    width: 267px;
+    height: 268px;
+    top: 84px;
+    left: 108px;
+  }
+}
+section {
+  h3 {
+    background: #31b487;
+    color: #fff;
+    border-radius: 3px 3px 0 0;
+    width: 167px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    font-size: 19px;
+    font-family:  Avenir;
+    font-weight: normal;
+  }
+  h4 {
+    font-size: $p;
+    font-family: $font-web;
+    color: #000;
+    font-weight: 600;
+    p {
+      font-size: 12px;
+      color: #000;
+    }
+  }
+}
+.ourservice {
+  padding: 0 0 46px;
+  h3 {
+    margin: 0 auto;
+  }
+  &_inner {
+    background: #f2f2f2;
+    padding: 38px 0;
+  }
+}
+.list_service {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 400px;
+      a {
+        text-decoration: none;
+        color: #000;
+        font-family: $font-web;
+        article {
+          background: #fff;
+          padding: 19px 0 22px 24px;
+          margin-top: -6px;
+          h4 {
+            margin-bottom: 9px;
+          }
+          p {
+            text-indent: -2px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+.info {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+    overflow: hidden;
+  }
+  &_txt {
+    width: 724px;
+    float: left;
+    ul {
+      li {
+        padding: 35px 0 0px 21px;
+        a {
+          text-decoration: none;
+          color: #000;
+          time {
+            font-size: 15px;
+            font-family:  Avenir;
+            color: #000;
+            display: block;
+            margin-bottom: 5px;
+          }
+          p {
+            margin-top: 7px;
+            font-size: 13px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  &_inner {
+    border-bottom: 2px solid #31b487;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      height: 32px;
+    }
+    a {
+      color: #31b487;
+      display: block;
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: none;
+      line-height: 31px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 11px;
+        left: -16px;
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid #31b487;
+        border-right: 2px solid #31b487;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  &_img {
+    float: left;
+    width: 478px;
+    margin-left: 78px;
+    figure {
+      margin: -3px 0 31px 0;
+    }
+  }
+}
+.btn {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	li {
+		a {
+      width: 224px;
+      height: 71px;
+      line-height: 71px;
+			text-decoration: none;
+			display: block;
+			text-align: center;
+			font-size: 17px;
+			position: relative;
+			transition: all .3s ease-out;
+			vertical-align: middle;
+			transition-property: color;
+      &.contact {
+        background: #d3d3d3;
+        color: #000;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          background: url('../..images/contact_icon_02.png');
+          display: block;
+          width: 30px;
+          height: 21px;
+          top: 50%;
+          left: 0;
+          transform: translate(0 , -50%);
+        }
+        &:hover {
+          color: #d3d3d3;
+          background: #000;
+        }
+      }
+      &.qa {
+        background: #31b487;
+        color: #fff;
+        &::after {
+          content: "";
+          position: absolute;
+          background: url('../../images/qa_icon.png');
+          display: block;
+          width: 34px;
+          height: 31px;
+          top: 50%;
+          left: 0;
+          transform: translate(0 , -50%);
+        }
+        &:hover {
+          background: #fff;
+          border: 1px solid #000;
+          color: #000;
+        }
+      }
+		}
+	}
+}

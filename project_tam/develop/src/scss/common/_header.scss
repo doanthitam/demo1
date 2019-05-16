@@ -2,13 +2,13 @@
 // header
 //------------------------------------------------------------------------
 @charset "utf-8";
-
 header {
   .main_header {
     display: flex;
     .top {
       h1 {
         font-size: 0;
+        margin: 42px 177px 0 0;
         a {
           display: block;
         }
@@ -19,13 +19,22 @@ header {
       justify-content: space-between;
       ul {
         display: flex;
+        margin: 58px 0 0 0;
         li {
-          a {
-            font-size: 16px;
+          padding: 0 14px 0 26px;
+          &::first-child {
+            padding-left: 0;
+          }
+          &::last-child {
+            padding: 0 0 0 42px;
+          }
+          a:not(.header_contact){
+            font-size: $p;
             font-family: $font-web;
             font-style: normal;
             color: #000;
-            span {
+            display: block;
+            span{
               display: inline-block;
               transform: translateY(0);
               opacity: 1;
@@ -36,18 +45,42 @@ header {
                 position: absolute;
                 display: block;
                 top: 7px;
-                left: -20px;
-                width: 10px;
-                height: 10px;
+                left: -16px;
+                width: 7px;
+                height: 7px;
                 border-top: 1px solid #000;
                 border-right: 1px solid #000;
                 transform: rotate(45deg);
               }
-
             }
             &:hover{
               opacity: 0.8;
             }
+          }
+          .header_contact {
+            width: 180px;
+            height: 31px;
+            line-height: 31px;
+            border-radius: 3px;
+            display: block;
+            background: #ededed;
+            position: relative;
+            text-align: center;
+            color: #000;
+            text-decoration: none;
+            ::before {
+              content: "";
+              position: absolute;
+              background: url('../../images/contact_icon.png');
+              width: 16px;
+              height: 12px;
+              top: 50%;
+              transform: translate(0 , -50%);
+              left: 36px;
+            }
+          }
+          ::last-child {
+            padding-right: 0;
           }
         }
       }

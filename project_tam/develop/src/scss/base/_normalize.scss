@@ -27,7 +27,12 @@ body {
  * 1. Add the correct display in Edge, IE, and Firefox.
  * 2. Add the correct display in IE.
  */
-
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6
 article,
 aside,
 details, /* 1 */
@@ -42,6 +47,35 @@ section,
 summary { /* 1 */
   display: block;
 }
+/* HTML5 display definitions
+   ========================================================================== */
+   html,
+   body,
+   p,
+   ol,
+   ul,
+   li,
+   dl,
+   dt,
+   dd,
+   blockquote,
+   figure,
+   fieldset,
+   legend,
+   textarea,
+   pre,
+   iframe,
+   hr,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+     margin: 0;
+     padding: 0;
+   }
+
 ul {
   li {
     list-style: none;
