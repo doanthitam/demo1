@@ -174,6 +174,7 @@ section {
 		a {
       width: 224px;
       height: 71px;
+      position: relative;
       line-height: 71px;
 			text-decoration: none;
 			display: block;
@@ -183,29 +184,29 @@ section {
 			transition: all .3s ease-out;
 			vertical-align: middle;
 			transition-property: color;
+      &:hover {
+        opacity: 0.5;
+      }
       &.contact {
         background: #d3d3d3;
         color: #000;
-        position: relative;
+        padding-left: 28px;
         &::after {
           content: "";
           position: absolute;
-          background: url('../..images/contact_icon_02.png');
+          background: url('../../images/contact_icon_02.png');
           display: block;
           width: 30px;
           height: 21px;
           top: 50%;
-          left: 0;
+          left: 30px;
           transform: translate(0 , -50%);
-        }
-        &:hover {
-          color: #d3d3d3;
-          background: #000;
         }
       }
       &.qa {
         background: #31b487;
         color: #fff;
+        padding-left: 40px;
         &::after {
           content: "";
           position: absolute;
@@ -214,13 +215,8 @@ section {
           width: 34px;
           height: 31px;
           top: 50%;
-          left: 0;
+          left: 42px;
           transform: translate(0 , -50%);
-        }
-        &:hover {
-          background: #fff;
-          border: 1px solid #000;
-          color: #000;
         }
       }
 		}

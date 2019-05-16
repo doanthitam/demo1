@@ -3,7 +3,16 @@
 //------------------------------------------------------------------------
 
 footer {
-  ._nav{
-    
+  background: #31b487;
+  .foo_nav {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        a {
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
