@@ -8,7 +8,7 @@ header {
     .top {
       h1 {
         font-size: 0;
-        margin: 42px 177px 0 0;
+        margin: 42px 204px 0 0;
         a {
           display: block;
         }
@@ -22,11 +22,12 @@ header {
         margin: 58px 0 0 0;
         li {
           padding: 0 14px 0 26px;
-          &::first-child {
+          &:first-child {
             padding-left: 0;
           }
-          &::last-child {
-            padding: 0 0 0 42px;
+          &:last-child {
+            padding: 0 0 0 40px;
+            margin-top: -4px;
           }
           a:not(.header_contact){
             font-size: $p;
@@ -34,6 +35,7 @@ header {
             font-style: normal;
             color: #000;
             display: block;
+            transition: all .3s ease-out;
             span{
               display: inline-block;
               transform: translateY(0);
@@ -54,10 +56,12 @@ header {
               }
             }
             &:hover{
-              opacity: 0.8;
+              opacity: 0.5;
             }
           }
           .header_contact {
+            font-size: 12px;
+            padding-left: 9px;
             width: 180px;
             height: 31px;
             line-height: 31px;
@@ -78,9 +82,6 @@ header {
               transform: translate(0 , -50%);
               left: 36px;
             }
-          }
-          ::last-child {
-            padding-right: 0;
           }
         }
       }

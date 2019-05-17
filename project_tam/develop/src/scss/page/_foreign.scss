@@ -1,0 +1,27 @@
+.foreign {
+  padding: 26px 0 0;
+  p {
+    font-size: 13px;
+  }
+  &_inner {
+    background: #f1f1f1;
+    padding: 39px 37px 30px;
+    margin: 42px 0 56px;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    figure {
+      width: 468px;
+      float: left;
+    }
+    p {
+      margin: 15px 0 0 513px;
+      line-height: 30px;
+    }
+  }
+  &_block {
+    padding: 78px 0 0;
+  }
+}
