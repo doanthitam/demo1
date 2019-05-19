@@ -1,3 +1,11 @@
+body,
+td,
+th,
+input,
+textarea {
+  font-family: $font-web;
+}
+
 .container {
   min-width: 1280px;
 }
@@ -29,8 +37,9 @@
   height: 45px;
   line-height: 45px;
   color: #fff;
-  padding-left: 10px;
+  padding-left: 22px;
   font-size: 21px;
+  border-radius: 3px;
 }
 
 .gray_border {
@@ -49,3 +58,19 @@
     left: 0;
   }
 }
+.btn {
+  display: block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-family: $font-web;
+  width: 853px;
+  height: 109px;
+  background: #0c99d8;
+  line-height: 109px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  margin: 0 auto;
+  }

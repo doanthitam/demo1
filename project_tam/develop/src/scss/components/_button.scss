@@ -2,25 +2,7 @@
 // button
 //------------------------------------------------------------------------
 
-.btn {
-  display: inline-block;
-  font-weight: $w-normal;
-  font-size: $p;
-  line-height: $lh;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  border: 1px solid $color-transparent;
-  border-radius: 4px;
-  padding: 15px;
-  cursor: pointer;
 
-  // colours
-  &--black {
-    color: $color-white;
-    background-color: $color-black;
-    border-color: $color-black;
-  }
 
   // sizes
   // &--sm {

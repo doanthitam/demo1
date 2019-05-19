@@ -1,5 +1,5 @@
 .foreign {
-  padding: 26px 0 0;
+  padding: 31px 0 171px;
   p {
     font-size: 13px;
   }
@@ -23,5 +23,25 @@
   }
   &_block {
     padding: 78px 0 0;
+    >p {
+      margin: 36px 18px 49px;
+    }
+  }
+  &_card {
+    margin-bottom: 77px;
+    &:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    article {
+      float: left;
+      width: calc(100% / 2);
+      padding: 51px 40px 30px 44px;
+      p {
+        line-height: 30.1px;
+        margin-top: 23px;
+      }
+    }
   }
 }
