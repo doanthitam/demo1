@@ -1,0 +1,132 @@
+.card {
+  padding: 32px 0 0;
+  &_block {
+    padding: 78px 0 38px;
+    .des_txt {
+      font-size: 10.7px;
+      padding: 37px 13px 20px 19px;
+      span {
+        display: block;
+        color: #ff0000;
+        margin-top: 14px;
+      }
+    }
+  }
+  &_inner {
+    background: #f1f1f1;
+    padding: 42px 0 45px;
+    margin: 45px 0 70px;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .f_left {
+      float: left;
+      width: 485px;
+      .inner_img {
+        display: flex;
+        justify-content: center;
+        &:after {
+          display: block;
+          content: "";
+          clear: both;
+          figure {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+    p {
+      margin: 15px 0 0 513px;
+      line-height: 30px;
+    }
+  }
+  &_service {
+    h3 {}
+    .service_inner {
+      display: flex;
+      margin: 45px 0 30px;
+      .nexco {
+        width: 545px;
+        display: flex;
+        align-items: center;
+      }
+      .sale {
+        width: 581px;
+        display: flex;
+        margin: 0 -8px;
+        li {
+          width: 199px;
+          margin: 0 0 0 37px;
+          a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 5px;
+            width: 199px;
+            height: 233px;
+            p {
+              font-size: 14px;
+            }
+            small {
+              font-size: 10.29px;
+            }
+            h5 {
+              font-size: 18.53px;
+            }
+            span {
+              font-size: 10.29px;
+            }
+          }
+          &:first-child {
+            a {
+              background: #8776cd;
+            }
+          }
+          &:nth-child(2) {
+            a {
+              background: #ea9675;
+            }
+          }
+          &:last-child {
+            a {
+              background: #38ade2;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_type {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .inner {
+      float: left;
+      figure {
+        width: 226px;
+        margin: 0 auto;
+      }
+      p {
+        border-bottom: 2px solid #000;
+        padding: 30px 0;
+      }
+    }
+    .type_01 {
+      width: 536px;
+    }
+    .item {
+      width: 213px;
+      text-align: center;
+    }
+    .type_02 {
+      width: 527px;
+      float: right;
+    }
+  }
+}
