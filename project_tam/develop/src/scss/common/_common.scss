@@ -73,4 +73,17 @@ textarea {
   font-size: 30px;
   color: #fff;
   margin: 0 auto;
+  position: relative;
+  padding-left: 53px;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url('../../images/large_icon_contact.png') no-repeat;
+    width: 36px;
+    height: 27px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 251px;
   }
+}
