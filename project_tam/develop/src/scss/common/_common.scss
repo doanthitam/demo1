@@ -80,10 +80,14 @@ textarea {
     position: absolute;
     display: block;
     background: url('../../images/large_icon_contact.png') no-repeat;
+    background-size: contain;
     width: 36px;
     height: 27px;
     top: 50%;
     transform: translateY(-50%);
     left: 251px;
   }
+}
+img {
+  width: 100%;
 }

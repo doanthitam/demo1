@@ -12,10 +12,9 @@
       transform: translate(-50%, -50%);
       left: 50%;
       text-align: center;
-      color: #fff;
-      padding-bottom: 33px;
+      padding-bottom: 80px;
       h2 {
-        line-height: 124px;
+        width: calc(1161px / 2);
       }
       p {
         font-size: 15px;
@@ -24,16 +23,18 @@
         letter-spacing: 4px;
         font-weight: 400;
         margin-bottom: 20px;
+        color: #fff;
       }
     }
     &::after {
       content: "";
       position: absolute;
-      background: url('../../images/hand_pc.png');
+      background: url('../../images/hand_pc.png') no-repeat;
       width: 267px;
       height: 268px;
       top: 84px;
       left: 108px;
+      background-size: contain;
     }
   }
   section {
@@ -233,13 +234,14 @@
           &::after {
             content: "";
             position: absolute;
-            background: url('../../images/contact_icon_02.png');
+            background: url('../../images/contact_icon_02.png')no-repeat;
             display: block;
             width: 30px;
             height: 21px;
             top: 50%;
             left: 30px;
             transform: translate(0 , -50%);
+            background-size: contain;
           }
         }
         &.qa {
@@ -249,7 +251,8 @@
           &::after {
             content: "";
             position: absolute;
-            background: url('../../images/qa_icon.png');
+            background: url('../../images/qa_icon.png')no-repeat;
+            background-size: contain;
             display: block;
             width: 34px;
             height: 31px;
