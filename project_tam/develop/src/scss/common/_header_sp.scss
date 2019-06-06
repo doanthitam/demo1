@@ -1,0 +1,126 @@
+@charset "utf-8";
+header {
+  .main_header {
+    position: relative;
+    .top {
+      h1 {
+        font-size: 0;
+        padding: percentage(44 / 768) 0 percentage(44 / 768) percentage(20 / 768);
+        a {
+          display: block;
+        }
+        img {
+          width: 225px;
+        }
+      }
+    }
+    .menu {
+      position: absolute;
+      padding: percentage(55 / 768) percentage(20 / 768) percentage(44 / 768) 0;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+.menu_btn {
+  position: relative;
+  width: 29px;
+  height: 28px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  z-index: 9999;
+  span {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #000;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 11px;
+    }
+    &:nth-child(3) {
+      top: 22px;
+    }
+  }
+  &.is-active {
+    span {
+      background: #fff;
+      &:nth-child(1) {
+        top: 10px;
+        transform: rotate(135deg);
+        transition: .7s ease;
+        opacity: 0.8;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        right: 100px;
+      }
+      &:nth-child(3) {
+        top: 10px;
+        transform: rotate(-135deg);
+        transition: .7s ease;
+      }
+    }
+  }
+}
+.cv_nav {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  padding-top: 155px;
+  z-index: 9;
+  .nav {
+    overflow: hidden;
+    text-align: center;
+    ul {
+      li {
+        margin-bottom: 30px;
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 20px;
+          position: relative;
+          line-height: 1;
+          &:before {
+            position: absolute;
+            content: "";
+            z-index: -1;
+            left: 0;
+            right: 100%;
+            bottom: 0;
+            background: #fff;
+            height: 2px;
+            transition-property: right;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-out;
+          }
+          &:hover::before {
+            right: 0;
+          }
+          em {
+            font-family: "Yugothic";
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+  &.is_active {
+    opacity: 0;
+    transition: .5s ease-in-out;
+  }
+  &.active {
+    opacity: 1;
+  }
+}
