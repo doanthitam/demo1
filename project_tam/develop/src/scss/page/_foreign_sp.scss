@@ -1,0 +1,30 @@
+.foreign {
+  padding: percentage(30 / 768) percentage(30 / 768) percentage(60 / 768);
+  p {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  &_inner {
+    background: #f1f1f1;
+    padding: percentage(60/ 768) percentage(30 / 768);
+    margin: percentage(40/ 768) 0 percentage(35 / 768);
+    p {
+      margin: 15px 0 0 0;
+    }
+  }
+  &_block {
+    padding: percentage(65 / 768) 0 percentage(30 / 768);
+    >p {
+      padding: percentage(27/ 768) percentage(30 / 768) percentage(35/ 768) percentage(40 / 768);
+    }
+  }
+  &_card {
+    margin-bottom: percentage(70 / 768);
+    article {
+      padding: percentage(51 / 768) percentage(30 / 768) 0;
+      p {
+        margin-top: percentage(40 / 768);
+      }
+    }
+  }
+}
