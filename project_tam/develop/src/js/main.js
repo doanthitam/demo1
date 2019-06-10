@@ -1,5 +1,5 @@
+// resize();
 $(window).on('resize',function(){
-  resize();
 })
 $(function() {
   $(".menu_btn").click(function() {
